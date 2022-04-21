@@ -17,23 +17,62 @@
   display: flex;
 }
 
+
+
 .welcome {
   display        : flex;
   height         : 100vh;
   width          : 100vw;
-  background     : url(../assets/homephoto.png) no-repeat center;
+  background     : url(../assets/homephoto.png) no-repeat center fixed;
   background-size: cover;
+  flex-direction : column;
+  align-items    : center;
+}
 
-  flex-direction: column;
-  align-items   : center;
+.text-main {
+
+  height            : 100vh;
+  // width          : 100vw;
+  display           : flex;
+  justify-content   : center;
+  color             : chartreuse;
+  align-items       : center;
 }
 
 .information {
   display         : flex;
   height          : 200vh;
-  width           : 200vw;
-  background-color: red;
+  width           : 100vw;
+  background-color: #1F2022;
   flex-direction  : column;
+  color           : white
+}
+
+.text-information {
+  padding-top    : 3%;
+  display        : flex;
+  justify-content: left;
+  font-weight    : 600;
+}
+
+.article {
+  display        : flex;
+  justify-content: start;
+  align-items    : center;
+}
+
+.text-information-article {
+  display     : flex;
+  padding-left: 4vw;
+  width: 60vw;
+
+}
+
+.icon {
+  display       : flex;
+  flex-direction: column;
+  max-width     : 20vw;
+  margin-left   : 3vw;
 }
 
 .whoweare {
