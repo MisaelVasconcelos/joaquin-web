@@ -1,14 +1,14 @@
 .toolbar {
   // position        : absolute;
-  height             : 60px;
-  display            : flex;
-  align-items        : center;
-  width              : 100vw;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  width: 100vw;
   // opacity         : 20%;
-  color              : white;
-  opacity            : 100%;
-  font-weight        : 600;
-  justify-content    : space-around;
+  color: white;
+  opacity: 100%;
+  font-weight: 600;
+  justify-content: space-around;
 
 
 }
@@ -20,66 +20,68 @@
 
 
 .welcome {
-  display        : flex;
-  height         : 100vh;
-  width          : 100vw;
-  background     : url(../assets/homephoto.png) no-repeat center fixed;
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+  background: url(../assets/homephoto.png) no-repeat center fixed;
   background-size: cover;
-  flex-direction : column;
-  align-items    : center;
+  flex-direction: column;
+  align-items: center;
 }
 
 .text-main {
 
-  height            : 100vh;
+  height: 100vh;
   // width          : 100vw;
-  display           : flex;
-  justify-content   : center;
-  color             : chartreuse;
-  align-items       : center;
+  display: flex;
+  justify-content: center;
+  color: chartreuse;
+  align-items: center;
 }
 
 .information {
-  display         : flex;
-  height          : 200vh;
-  width           : 100vw;
+  display: flex;
+  height: 200vh;
+  width: 100vw;
   background-color: #1F2022;
-  flex-direction  : column;
-  color           : white
+  flex-direction: column;
+  color: white
 }
 
 .text-information {
-  padding-top    : 3%;
-  display        : flex;
+  padding-top: 3%;
   justify-content: left;
-  font-weight    : 600;
+  font-weight: 600;
 }
-
+.text-information p{
+  margin-top: 1vmin;
+}
 .article {
-  display        : flex;
-  justify-content: start;
-  align-items    : center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
 .text-information-article {
-  display     : flex;
   padding-left: 4vw;
-  width: 60vw;
-
+  width: 75vw;
+  padding-right: 4vw;
 }
 
 .icon {
-  display       : flex;
+  display: flex;
   flex-direction: column;
-  max-width     : 20vw;
-  margin-left   : 3vw;
+  // max-width: 20vw;
+  align-items: center;
+  padding-bottom: 5vh;
 }
 
 .whoweare {
-  display         : flex;
-  height          : 100vh;
-  width           : 100vw;
+  display: flex;
+  height: 100vh;
+  width: 100vw;
   background-color: orange;
-  flex-direction  : column;
-  align-items     : center;
+  flex-direction: column;
+  align-items: center;
 }
