@@ -136,7 +136,24 @@
 
 .resultadosReales {
   background-color: #6D5B6A;
+  height          : 100vh;
+  display         : flex;
+  flex-direction  : column;
+  justify-content : center;
 
+  div {
+    align-items: center !important;
+  }
+
+
+
+  .centerCarousel {
+    align-self    : center;
+    // align-items: center !important;
+    display       : flex;
+    height        : 70vh;
+    width         : 60vw;
+  }
 }
 
 /////
