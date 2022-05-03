@@ -1,6 +1,75 @@
+// colores
+
+:root {
+  // --text-color: #D6E1EF;
+  --text-color: #fff;
+  --text-color-secondary: #343434;
+
+  --color-primary: #000;
+  
+  --color-one: #1F2022;
+  --color-two: #282736;
+  --color-three: #6D5B6A;
+  --color-four: #D5674B;
+}
+
+
 /* You can add global styles to this file, and also import other style files */
 html,
 body {
   padding: 0px !important;
   margin : 0px !important;
+}
+
+@font-face {   
+  font-family: 'AlegreyaSansSC-Light';
+  src: url('./assets/fonts/alegraya/AlegreyaSansSC-Light.ttf');
+}
+
+@font-face {   // use as semibold
+  font-family: 'Roboto-Regular';  
+  src: url('./assets/fonts/roboto/Roboto-Regular.ttf');
+}
+
+@font-face {   // use as regular
+  font-family: 'Roboto-Light';  
+  src: url('./assets/fonts/roboto/Roboto-Light.ttf');
+}
+
+
+h1 {
+	font-family: AlegreyaSansSC-Light !important;
+	font-size: 64pt !important;
+	color: var(--text-color);
+}
+
+h2 {
+	font-family: Roboto-Regular !important;
+	font-size: 22pt !important;
+	color: var(--text-color);
+}
+
+h3 {
+	font-family: Roboto-Light !important;
+	font-size: 20pt !important;
+	color: var(--text-color);
+}
+
+.headline {
+  font-family: Roboto-Light !important;
+	font-size: 18pt !important;
+	color: var(--text-color);
+}
+
+span {
+	font-family: Roboto-Light !important;
+	font-size: 14pt !important;
+	color: var(--text-color);
+}
+
+
+p {
+	font-family: Roboto-Light !important;
+	font-size: 12pt !important;
+	color: var(--text-color);
 }

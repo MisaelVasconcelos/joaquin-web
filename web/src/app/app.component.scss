@@ -22,7 +22,7 @@
 .welcome {
   display: flex;
   height: 100vh;
-  width: 100vw;
+  // width: 100vw;
   background: url(../assets/homephoto.png) no-repeat center fixed;
   background-size: cover;
   flex-direction: column;
@@ -42,7 +42,7 @@
 .information {
   display: flex;
   height: 200vh;
-  width: 100vw;
+  // width: 100vw;
   background-color: #1F2022;
   flex-direction: column;
   color: white
@@ -80,8 +80,51 @@
 .whoweare {
   display: flex;
   height: 100vh;
-  width: 100vw;
+  // width: 100vw;
   background-color: orange;
   flex-direction: column;
   align-items: center;
+}
+
+
+
+/////
+
+.contacto { 
+  background-color: #D5674B;
+  .list {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    @media (max-width: 500px) {
+      flex-direction: column;
+    }
+  }
+  h3 {
+    padding: 1em;
+    text-align: center;
+    color: var(--text-color-secondary);
+  }
+
+  .end {
+    padding: 1em;
+    text-align: center;
+  }
+}
+
+
+//// Global classes
+
+.title {
+  margin: 0em;
+  padding: 2em;
+}
+
+.buttonDefault {
+  border-radius: 16px;
+  border-style: none;
+  padding: 0.7em;
+  font-size: 14pt;
+	color: var(--text-color-secondary);
+  min-width: 18vw;
 }
