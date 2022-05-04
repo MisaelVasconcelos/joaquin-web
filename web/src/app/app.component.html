@@ -165,8 +165,7 @@
   </p>
   <div class="centerCarousel">
 
-    <carousel [height]="500" [overflowCellsLimit]="3" [cellsToShow]="3" [loop]="true"
-      [arrowsOutside]="true">
+    <carousel [height]="500" [overflowCellsLimit]="3" [cellsToShow]="3" [loop]="true" [arrowsOutside]="true">
       <div class="carousel-cell">
         <img src="../assets/testimony/93c809f7-14d7-4b5d-9bac-30d1f940985e.jpg">
       </div>
@@ -223,11 +222,19 @@
   </h3>
 
   <div class="end">
-    <button class="buttonDefault"><i class="fa-brands fa-whatsapp"></i> Contactanos!</button>
+    <button (click)="goTo('https://wa.me/whatsappphonenumber/?text=urlencodedtext')" class="buttonDefault"><i
+        class="fa-brands fa-whatsapp"></i> Contactanos!</button>
   </div>
 </section>
 
-
+<section class="faq container">
+  <span>Lorem ipsum dolor sit amet. Et galisum enim sit corrupti laudantium sed nostrum autem id nostrum numquam eum
+    dolore quia. Et accusamus cupiditate et eaque amet hic sint maiores est delectus rerum ea consectetur dolorem. In
+    enim beatae ut quis voluptatem vel aliquid libero hic aperiam nihil cum suscipit laboriosam sit dolores perferendis
+    et dignissimos porro? Ut explicabo dolorem et galisum magnam ut dolores atque qui odio pariatur non consequatur
+    saepe id quidem quaerat non repellendus ducimus.</span>
+  <div> <img src="" alt=""> imagen peruana</div>
+</section>
 <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
 <!-- * * * * * * * * * * * The content above * * * * * * * * * * * -->
 <!-- * * * * * * * * * * is only a placeholder * * * * * * * * * * -->

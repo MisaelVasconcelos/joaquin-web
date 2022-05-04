@@ -160,7 +160,7 @@
 
 .contacto {
   background-color: #D5674B;
-  height          : 100vh;
+  height          : 60vh;
 
   .list {
     display        : flex;
@@ -185,6 +185,35 @@
 }
 
 
+.faq {
+  display        : flex;
+  flex-direction : row;
+  flex-wrap      : wrap;
+  align-content  : center;
+  justify-content: center;
+
+  span {
+    width    : 70vw;
+    height   : auto;
+    color    : #1F2022 !important;
+    font-size: 9pt;
+  }
+
+  div {
+    width          : 20vw;
+    flex-wrap      : nowrap;
+    justify-content: center;
+    align-self     : center;
+    text-align     : center;
+
+    img {
+      display        : flex;
+      align-content  : center;
+      justify-content: center;
+    }
+  }
+}
+
 //// Global classes
 
 .container {
@@ -198,6 +227,7 @@
 }
 
 .buttonDefault {
+  cursor       : pointer;
   border-radius: 16px;
   border-style : none;
   padding      : 0.7em;
