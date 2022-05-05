@@ -10,5 +10,14 @@ export class AppComponent {
 
   constructor() {
   }
+  goTo(url: any) {
+    window.open(url, "_blank");
 
+  }
+  onSwiper(swipe: any) {
+    console.log('asd');
+  }
+  onSlideChange() {
+    console.log('slide change');
+  }
 }
