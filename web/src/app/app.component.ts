@@ -1,20 +1,31 @@
-import { Component, ElementRef, ViewChild } from "@angular/core"
-import { delay } from "rxjs";
-
+import { Component } from "@angular/core"
+import { Meta, Title } from "@angular/platform-browser";
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'joaquin-web';
+  title: string = 'AMOR ES VIDA';
 
-  background = '../assets/homeBackground/1.png';
-  backgroundN = 1;
+  background: string = '../assets/homeBackground/1.png';
+  backgroundN: number = 1;
 
   termsHidden = true;
 
-  constructor() {
+  constructor(
+    private metaService: Meta,
+    private titleService: Title
+  ) {
+    this.metaService.addTags([
+      { name: "description", content: "Ayudas en el amor mediante ciencias ocultas y esoterismo. Hacemos amarres de amor, retornos de pareja, afectos sexuales y dominación total. Entregamos soluciones a problemas de amor, infidelidad, desconfianza, salud, atracción y mucho más" },
+      { property: 'og:title', content: 'Ayudas en el amor' },
+      { name: "author", content: "Bruno Jular" },
+      { name: "keywords", content: "amor, ayudas, profesional, profesionales, pareja, amarres, sexualidad, dominacion, dominacion total, afectos sexuales, retorno de pareja, amarres de amor, vida, amor es vida, ocultismo, ciencias ocultas, ocultas, esoterismo" },
+      { name: 'robots', content: 'index,follow' },
+
+    ])
+    this.titleService.setTitle(this.title)
   }
 
   ngOnInit() {
@@ -36,12 +47,6 @@ export class AppComponent {
 
   scroll(el: HTMLElement) {
     el.scrollIntoView({ behavior: 'smooth' });
-  }
-
-  wp() {
-    // open whatsapp and send message
-    let text = "TEXTO PERSONALIZADO"
-    window.open('https://wa.me/+5493512613917?text=' + text + '', '_blank');
   }
 
   delay() {

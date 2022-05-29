@@ -216,7 +216,8 @@
 .contacto {
   background-color: #D5674B;
   height: 100vh;
-
+  display: flex;
+  flex-direction: column;
   .list {
     display: flex;
     flex-direction: row;
@@ -239,6 +240,7 @@
 
   .end {
     padding: 1em;
+    margin-top:3%;
     text-align: center;
   }
 }
@@ -274,7 +276,7 @@
 
 .title {
   margin: 0em;
-  padding-top: 2em;
+  padding-top: 0.5em;
   padding-bottom: 2em;
 }
 
