@@ -12,17 +12,21 @@ export class AppComponent {
   background = '../assets/homeBackground/1.png';
   backgroundN = 1;
 
-  termsHidden=true;
+  termsHidden = true;
 
   constructor() {
   }
-  
+
   ngOnInit() {
     // await this.delay();
     window.addEventListener("scroll", this.reveal);
 
     // To check the scroll position on page load
     this.reveal();
+
+    //Activate the home background scroll
+    this.delay()
+
   }
 
 
@@ -30,28 +34,20 @@ export class AppComponent {
     window.open(url, "_blank");
   }
 
-  onSwiper(swipe: any) {
-    console.log('asd');
-  }
-
-  onSlideChange() {
-    console.log('slide change');
-  }
-
   scroll(el: HTMLElement) {
-    el.scrollIntoView({ behavior: 'smooth'});
+    el.scrollIntoView({ behavior: 'smooth' });
   }
 
   wp() {
     // open whatsapp and send message
-    window.open('https://wa.me/+5493512613917?text=Im%20interested%20in%20your%20car%20for%20sale', '_blank');
+    let text = "TEXTO PERSONALIZADO"
+    window.open('https://wa.me/+5493512613917?text=' + text + '', '_blank');
   }
-  
+
   delay() {
-    setTimeout (() => {
-      console.log("Hello from setTimeout");
+    setTimeout(() => {
       this.backgroundN += 1;
-      if(this.backgroundN == 3) {this.backgroundN = 1;}
+      if (this.backgroundN == 3) { this.backgroundN = 1; }
       this.background = '../assets/homeBackground/' + this.backgroundN + '.png';
       this.delay();
     }, 3000);

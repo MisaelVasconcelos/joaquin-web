@@ -16,26 +16,27 @@
 ////
 
 .welcome {
-  display        : flex;
-  height         : 100vh;
+  display: flex;
+  height: 100vh;
   // width: 100vw;
-  background     : url(../assets/homeBackground/1.png) no-repeat center fixed;
-  background-size: cover;
-  flex-direction : column;
-  align-items    : center;
+  background: url(../assets/homeBackground/1.png) no-repeat center fixed;
+  background-size: cover !important;
+  flex-direction: column;
+  transition: background ease-in-out 0.7s;
+  align-items: center;
 
   .toolbar {
     // position        : absolute;
-    height             : 10vh;
-    display            : flex;
-    align-items        : center;
-    width              : 60vw;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    width: 60vw;
     // opacity         : 20%;
-    flex-wrap          : wrap;
-    color              : white;
-    opacity            : 100%;
-    font-weight        : 600;
-    justify-content    : space-around;
+    flex-wrap: wrap;
+    color: white;
+    opacity: 100%;
+    font-weight: 600;
+    justify-content: space-around;
 
     @media (max-width: 475px) {
       // flex-direction: column;
@@ -73,23 +74,23 @@
   background-color: #1F2022;
 
   .solution {
-    display        : flex;
-    flex-direction : row;
+    display: flex;
+    flex-direction: row;
     justify-content: center;
-    padding-top    : 1em;
+    padding-top: 1em;
 
     @media (max-width: 475px) {
       flex-direction: column;
     }
 
     .icon {
-      padding   : 1em;
+      padding: 1em;
       text-align: center;
-      flex-flow : column;
-      display   : flex;
+      flex-flow: column;
+      display: flex;
 
       i {
-        color        : var(--text-color);
+        color: var(--text-color);
         // font-size: 64pt;
         margin-bottom: 4vh;
 
@@ -100,11 +101,11 @@
     // 
     .text {
 
-      padding        : 1em;
-      display        : flex;
-      flex-direction : column;
+      padding: 1em;
+      display: flex;
+      flex-direction: column;
       justify-content: space-between;
-      max-width      : 66vw;
+      max-width: 66vw;
 
       .bottom {
         text-align: right;
@@ -133,8 +134,8 @@
   background-color: #282736;
 
   .people {
-    display        : flex;
-    flex-direction : row;
+    display: flex;
+    flex-direction: row;
     justify-content: space-around;
 
     @media (max-width: 475px) {
@@ -149,12 +150,12 @@
       }
 
       h3 {
-        height    : 10vh;
+        height: 10vh;
         text-align: center;
       }
 
       @media (max-width: 475px) {
-        width        : 80vw;
+        width: 80vw;
         margin-bottom: 3em;
 
         img {
@@ -162,7 +163,7 @@
         }
 
         h3 {
-          height    : auto;
+          height: auto;
           text-align: center;
         }
 
@@ -176,24 +177,25 @@
 .resultadosReales {
   background-color: #6D5B6A;
   // height          : 100vh;
-  display         : flex;
-  flex-direction  : column;
-  justify-content : center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 
   div {
     align-items: center !important;
   }
 
   .centerCarousel {
-    align-self    : center;
+    align-self: center;
     // align-items: center !important;
-    display       : flex;
+    display: flex;
     // height        : 70vh;
-    width         : 60vw;
+    width: 60vw;
   }
 
-  .carouselDesktop {  
+  .carouselDesktop {
     display: block;
+
     @media (max-width: 475px) {
       display: none;
     }
@@ -201,6 +203,7 @@
 
   .carouselMobile {
     display: none;
+
     @media (max-width: 475px) {
       display: block;
     }
@@ -212,11 +215,11 @@
 
 .contacto {
   background-color: #D5674B;
-  height          : 100vh;
+  height: 100vh;
 
   .list {
-    display        : flex;
-    flex-direction : row;
+    display: flex;
+    flex-direction: row;
     justify-content: space-around;
 
     @media (max-width: 475px) {
@@ -225,9 +228,9 @@
   }
 
   h3 {
-    padding   : 1em;
+    padding: 1em;
     text-align: center;
-    color     : var(--text-color-secondary);
+    color: var(--text-color-secondary);
 
     @media (max-width: 475px) {
       padding: 0em;
@@ -235,7 +238,7 @@
   }
 
   .end {
-    padding   : 1em;
+    padding: 1em;
     text-align: center;
   }
 }
@@ -243,21 +246,21 @@
 /////
 
 .faq {
-  display        : flex;
-  flex-direction : row;
-  flex-wrap      : wrap;
-  align-content  : center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: center;
   justify-content: center;
 
   span {
-    width    : 70vw;
-    height   : auto;
-    color    : #1F2022 !important;
+    width: 70vw;
+    height: auto;
+    color: #1F2022 !important;
     font-size: 9pt !important;
   }
 
   h2 {
-    width          : 20vw;
+    width: 20vw;
     color: black !important;
     text-align: center;
   }
@@ -270,34 +273,35 @@
 }
 
 .title {
-  margin        : 0em;
-  padding-top   : 2em;
+  margin: 0em;
+  padding-top: 2em;
   padding-bottom: 2em;
 }
 
 .buttonDefault {
-  cursor       : pointer;
+  cursor: pointer;
   border-radius: 16px;
-  border-style : none;
-  padding      : 0.7em;
-  font-size    : 14pt;
-  color        : var(--text-color-secondary);
-  min-width    : 18vw;
-  background   : #E3EDF7;
-  box-shadow   : -4px -2px 16px #FFFFFF, 4px 2px 16px rgba(136, 165, 191, 0.48);
-  background   : #E3EDF7;
-  box-shadow   : -4px -2px 16px #e3edf71a, 4px 2px 16px #e3edf74d;
+  border-style: none;
+  padding: 0.7em;
+  font-size: 14pt;
+  color: var(--text-color-secondary);
+  min-width: 18vw;
+  background: #E3EDF7;
+  box-shadow: -4px -2px 16px #FFFFFF, 4px 2px 16px rgba(136, 165, 191, 0.48);
+  background: #E3EDF7;
+  box-shadow: -4px -2px 16px #e3edf71a, 4px 2px 16px #e3edf74d;
 }
 
 //// animation
 
-.reveal{
+.reveal {
   position: relative;
   transform: translateY(150px);
   opacity: 0;
   transition: 2s all ease;
 }
-.reveal.active{
+
+.reveal.active {
   transform: translateY(0);
   opacity: 1;
 }
