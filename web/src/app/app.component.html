@@ -5,14 +5,14 @@
 <!-- <section class="welcome" role="main" > -->
 <section class="welcome" role="main" [style.background]="'url(' + background + ') no-repeat center fixed'">
   <div class="toolbar" role="banner">
-    <span>Quienes somos</span>
-    <span>Que hacemos</span>
-    <span>Resultados</span>
-    <span>Contactanos</span>
+    <span (click)="scroll(quienesSomos)">Quienes somos</span>
+    <span (click)="scroll(soluciones)">Que hacemos</span>
+    <span (click)="scroll(resultadosReales)">Resultados</span>
+    <span (click)="scroll(contacto)">Contactanos</span>
   </div>
   <div class="text-main">
     <h1>AMOR ES VIDA</h1>
-    <h3>ciencias ocultas y esoterismo</h3>
+    <h3 style="color:antiquewhite; font-size: small;">CIENCIAS OCULTAS Y ESOTERISMO</h3>
     <div>
       <div>
         <button class="buttonDefault">Testimonios reales</button>
