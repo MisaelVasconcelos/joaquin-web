@@ -11,14 +11,14 @@
     <span (click)="scroll(contacto)">Contactanos</span>
   </div>
   <div class="text-main">
-    <h1>AMOR ES VIDA</h1>
+    <h1>AMAR ES VIDA</h1>
     <h3 style="color:antiquewhite; font-size: small;">CIENCIAS OCULTAS Y ESOTERISMO</h3>
-    <div>
+    <div class="buttons">
       <div>
-        <button class="buttonDefault">Testimonios reales</button>
+        <button class="buttonDefault" (click)="scroll(resultadosReales)">Testimonios reales</button>
       </div>
-      <div style="padding-top: 10px">
-        <button class="buttonDefault">Nuestro profesionales</button>
+      <div>
+        <button class="buttonDefault" (click)="scroll(quienesSomos)">Nuestros profesionales</button>
       </div>
     </div>
   </div>
@@ -250,7 +250,7 @@
   <div class="end">
     <button class="buttonDefault">
       <i class="fa-brands fa-whatsapp"></i> <a rel="nofollow"
-        href="https://wa.me/+5493512613917?text=texto%20personalizado" target="_blank">Contactanos!</a>
+        href="https://wa.me/+5493512613917?text=texto%20personalizado" target="_blank"> Contactanos!</a>
     </button>
   </div>
 </section>
@@ -279,7 +279,7 @@
     están registrado bajo un nombre de fantasía y utilizan imágenes que resultan meramente ilustrativas.
   </span>
 
-  <h2>AMOR <br> ES <br> VIDA</h2>
+  <h2>AMAR <br> ES <br> VIDA</h2>
 </section>
 
 <router-outlet></router-outlet>
