@@ -6,7 +6,7 @@ import { Meta, Title } from "@angular/platform-browser";
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title: string = 'AMOR ES VIDA';
+  title: string = 'AMAR ES VIDA';
 
   background: string = '../assets/homeBackground/1.png';
   backgroundN: number = 1;
@@ -20,10 +20,12 @@ export class AppComponent {
     this.metaService.addTags([
       { name: "description", content: "Ayudas en el amor mediante ciencias ocultas y esoterismo. Hacemos amarres de amor, retornos de pareja, afectos sexuales y dominación total. Entregamos soluciones a problemas de amor, infidelidad, desconfianza, salud, atracción y mucho más" },
       { property: 'og:title', content: 'Ayudas en el amor' },
-      { name: "author", content: "Bruno Jular" },
+      { name: "author", content: "amor es vida desarrolladores" },
       { name: "keywords", content: "amor, ayudas, profesional, profesionales, pareja, amarres, sexualidad, dominacion, dominacion total, afectos sexuales, retorno de pareja, amarres de amor, vida, amor es vida, ocultismo, ciencias ocultas, ocultas, esoterismo" },
       { name: 'robots', content: 'index,follow' },
-
+      { name: 'og:image', content: 'https://amaresvida.com/assets/people/image3.png' },
+      // { name: 'twitter:image', content: '../assets/' },
+      
     ])
     this.titleService.setTitle(this.title)
   }
@@ -60,7 +62,7 @@ export class AppComponent {
   delay() {
     setTimeout(() => {
       this.backgroundN += 1;
-      if (this.backgroundN == 3) { this.backgroundN = 1; }
+      if (this.backgroundN == 4) { this.backgroundN = 1; }
       this.background = '../assets/homeBackground/' + this.backgroundN + '.png';
       this.delay();
     }, 3000);
