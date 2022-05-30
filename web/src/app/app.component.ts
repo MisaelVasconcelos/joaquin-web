@@ -26,6 +26,9 @@ export class AppComponent {
       { name: "keywords", content: "amor, ayudas, profesional, profesionales, pareja, amarres, sexualidad, dominacion, dominacion total, afectos sexuales, retorno de pareja, amarres de amor, vida, amor es vida, ocultismo, ciencias ocultas, ocultas, esoterismo" },
       { name: 'robots', content: 'index,follow' },
       { name: 'og:image', content: 'https://amaresvida.com/assets/people/image3.webp' },
+      { name: "og:locale", content: "es_AR" },
+      { name: "og:type", content: "website" },
+
       // { name: 'twitter:image', content: '../assets/' },
 
     ])
