@@ -18,14 +18,16 @@ export class AppComponent {
     private titleService: Title
   ) {
     this.metaService.addTags([
-      { name: "description", content: "Ayudas en el amor mediante ciencias ocultas y esoterismo. Hacemos amarres de amor, retornos de pareja, afectos sexuales y dominación total. Entregamos soluciones a problemas de amor, infidelidad, desconfianza, salud, atracción y mucho más" },
-      { property: 'og:title', content: 'Ayudas en el amor' },
+      { name: "description", content: "Ayudas en el amor provee ayuda mediante ciencias ocultas y esoterismo. Hacemos amarres de amor, retornos de pareja, afectos sexuales y dominación total. Entregamos soluciones a problemas de amor, infidelidad, desconfianza, salud, atracción y mucho más" },
+      { name: "og:description", content: "Ayudas en el amor provee ayuda mediante ciencias ocultas y esoterismo. Hacemos amarres de amor, retornos de pareja, afectos sexuales y dominación total. Entregamos soluciones a problemas de amor, infidelidad, desconfianza, salud, atracción y mucho más" },
+      { name: 'title', content: 'Ayudas en el amor' },
+      { name: 'og:title', content: 'Ayudas en el amor' },
       { name: "author", content: "amor es vida desarrolladores" },
       { name: "keywords", content: "amor, ayudas, profesional, profesionales, pareja, amarres, sexualidad, dominacion, dominacion total, afectos sexuales, retorno de pareja, amarres de amor, vida, amor es vida, ocultismo, ciencias ocultas, ocultas, esoterismo" },
       { name: 'robots', content: 'index,follow' },
       { name: 'og:image', content: 'https://amaresvida.com/assets/people/image3.webp' },
       // { name: 'twitter:image', content: '../assets/' },
-      
+
     ])
     this.titleService.setTitle(this.title)
   }
