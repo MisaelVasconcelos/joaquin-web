@@ -37,11 +37,19 @@ export class AppComponent {
 
     //Activate the home background scroll
     this.delay()
-
+    this.preloadImage()
   }
 
+  preloadImage() {
+    for (let index = 1; index < 4; index++) {
+      let url: string = '../assets/homeBackground/' + index + '.png';
+      console.log("loaded", url)
+      var img = new Image();
+      img.src = url;
 
-  goTo(url: any) {
+    }
+  }
+  goTo(url: string) {
     window.open(url, "_blank");
   }
 
