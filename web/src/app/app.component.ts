@@ -8,7 +8,7 @@ import { Meta, Title } from "@angular/platform-browser";
 export class AppComponent {
   title: string = 'AMAR ES VIDA';
 
-  background: string = '../assets/homeBackground/1.png';
+  background: string = '../assets/homeBackground/1.webp';
   backgroundN: number = 1;
 
   termsHidden = true;
@@ -23,7 +23,7 @@ export class AppComponent {
       { name: "author", content: "amor es vida desarrolladores" },
       { name: "keywords", content: "amor, ayudas, profesional, profesionales, pareja, amarres, sexualidad, dominacion, dominacion total, afectos sexuales, retorno de pareja, amarres de amor, vida, amor es vida, ocultismo, ciencias ocultas, ocultas, esoterismo" },
       { name: 'robots', content: 'index,follow' },
-      { name: 'og:image', content: 'https://amaresvida.com/assets/people/image3.png' },
+      { name: 'og:image', content: 'https://amaresvida.com/assets/people/image3.webp' },
       // { name: 'twitter:image', content: '../assets/' },
       
     ])
@@ -44,7 +44,7 @@ export class AppComponent {
 
   preloadImage() {
     for (let index = 1; index < 4; index++) {
-      let url: string = '../assets/homeBackground/' + index + '.png';
+      let url: string = '../assets/homeBackground/' + index + '.webp';
       console.log("loaded", url)
       var img = new Image();
       img.src = url;
@@ -63,7 +63,7 @@ export class AppComponent {
     setTimeout(() => {
       this.backgroundN += 1;
       if (this.backgroundN == 4) { this.backgroundN = 1; }
-      this.background = '../assets/homeBackground/' + this.backgroundN + '.png';
+      this.background = '../assets/homeBackground/' + this.backgroundN + '.webp';
       this.delay();
     }, 3000);
   }
